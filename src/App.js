@@ -18,7 +18,7 @@ function App() {
         <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/cart" element={<Cart cartitems={cartitems} cartTotal={cartTotal} />} />
+          <Route path="/cart" element={<Cart cartitems={cartitems} cartTotal={cartTotal} setCartTotal={setCartTotal} />} />
           <Route path="/restaurants" element={<Restaurants cartTotal={cartTotal} setCartTotal={setCartTotal} cartitems={cartitems} setCartItems={setCartItems}/>} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/how-it-works" element={<Howitworks />} />

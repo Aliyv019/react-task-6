@@ -1,12 +1,12 @@
 import React from 'react'
 import CartItems from '../CartItems/CartItems'
 
-export default function Cartinner({cartitems,cartTotal}) {
+export default function Cartinner({cartitems,cartTotal,setCartTotal}) {
     
     return (
     <div className='flex flex-col gap-4 p-4 w-full'>
         {cartitems.map((item)=>(
-            <CartItems item={item}/>
+            <CartItems item={item} setCartTotal={setCartTotal} cartTotal={cartTotal}/>
         ))}
 
         
